@@ -26,11 +26,11 @@ class Selector extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className='flex gap-10'>
           <button onClick={this.changeKameraState}>Kamera</button>
           <button onClick={this.changeLensaState}>Lensa</button>
         </div>
-        <div>
+        <div className="m-4">
           {this.state.kameraChild && <Kamera />}
           {this.state.lensaChild && <Lensa />}
         </div>
