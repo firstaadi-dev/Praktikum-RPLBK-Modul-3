@@ -43,7 +43,7 @@ class Lensa extends Component {
     const { selection, lensa } = this.state;
     return (
       <>
-        <div>
+        <div className='kamera'>
           <select id="kameraDropDown" onChange={this.handleChangeLensa}>
             <option name="test" value="0">
               Pilih Lensa
@@ -58,14 +58,14 @@ class Lensa extends Component {
               })}
             </Fragment>
           </select>
-          <div>
+          <div className='gmbr'>
             <img
               src={this.state.selection.gambar}
               width="20%"
               height="20%"
             ></img>
           </div>
-          <div>
+          <div className='h2'>
             <p>
               Menyewa {selection.lensa}. Uang yang harus dibayarkan sejumlah Rp.
               {selection.harga}

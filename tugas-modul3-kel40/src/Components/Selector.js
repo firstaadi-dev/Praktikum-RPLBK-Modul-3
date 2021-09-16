@@ -25,16 +25,19 @@ class Selector extends Component {
   };
   render() {
     return (
-      <div>
-        <div className='flex gap-10'>
+      <>
+      <div className='container'>
+        <div className='buttoncontainer'>
           <button onClick={this.changeKameraState}>Kamera</button>
           <button onClick={this.changeLensaState}>Lensa</button>
         </div>
-        <div className="m-4">
+        <div className='hasil'>
           {this.state.kameraChild && <Kamera />}
           {this.state.lensaChild && <Lensa />}
         </div>
       </div>
+      </>
+
     );
   }
 }

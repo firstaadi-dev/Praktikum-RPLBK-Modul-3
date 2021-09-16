@@ -1,0 +1,50 @@
+body{
+  background: mediumpurple;
+}
+.container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buttoncontainer{
+  width:inherit;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttoncontainer button{
+  padding: 16px;
+  margin:20px;
+  color: white;
+  background-color: orchid;
+  font-family: sans-serif;
+  font-size: medium;
+}
+.kamera{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+.gmbr{
+  width:inherit;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hasil{
+  margin-left: 220px;
+}
+.gmbr img{
+  border: 2px solid black;
+}
+.h2{
+  font-family: sans-serif;
+  font-size: medium;
+  color: white;
+}
